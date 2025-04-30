@@ -28,14 +28,15 @@ const StyledLink = styled(Link)`
 `;
 
 export default function Header() {
-    
     return (
         <StyledHeader>
-            <StyledH1>Leafer</StyledH1>
+            <StyledH1><Link href="/">Leafer</Link></StyledH1>
             <nav>
-                <StyledLink href="/">Home</StyledLink>
                 <StyledLink href="/search">Search</StyledLink>
-                <StyledLink href="/strain_of_the_day">Strain of the day</StyledLink>
+                <StyledLink href="/strain-of-the-day">Strain of the day</StyledLink>
+                <StyledLink href="/random">Random</StyledLink>
+                <StyledLink href="/explore">Explore strains</StyledLink>
+                <StyledLink href="/dispensaries">Dispensaries</StyledLink>
             </nav>
         </StyledHeader>
     );

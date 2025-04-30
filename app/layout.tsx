@@ -11,8 +11,12 @@ const geist = Geist({ subsets: ["latin"], weight: ["400", "700"] });
 import Header from "@/components/Header";
 
 const StyledBody = styled.body`
-    // background-color:rgb(56, 56, 56);
-    background-image: url('/sigma_batman.jpg');
+  // background-color:rgb(56, 56, 56);
+  background-image: url('/sigma_batman.jpg');
+`;
+
+const BelowHeaderDiv = styled.div`
+  padding-top: 110px;
 `;
 
 export default function RootLayout({children}: Readonly<{children:React.ReactNode}>) {
@@ -26,7 +30,9 @@ export default function RootLayout({children}: Readonly<{children:React.ReactNod
       </head>
       <StyledBody>
         <Header />
-        {children}
+        <BelowHeaderDiv>
+          {children}
+        </BelowHeaderDiv>
       </StyledBody>
     </html>
   );

@@ -10,7 +10,7 @@ const StyledH1 = styled.h1`
 export default function Home() {
   return (
     <>
-    <StyledH1>HAWK_TUAH</StyledH1>
+      <StyledH1>HAWK_TUAH</StyledH1>
     </>
   );
 }
