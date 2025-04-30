@@ -11,8 +11,8 @@ const geist = Geist({ subsets: ["latin"], weight: ["400", "700"] });
 import Header from "@/components/Header";
 
 const StyledBody = styled.body`
-  // background-color:rgb(56, 56, 56);
-  background-image: url('/sigma_batman.jpg');
+  background-color:rgb(56, 56, 56);
+  // background-image: url('/sigma_batman.jpg');
 `;
 
 const BelowHeaderDiv = styled.div`
