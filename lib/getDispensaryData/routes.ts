@@ -1,5 +1,5 @@
 "use server";
 // for gathering dispensary data from API
-export default async function getWeedData() {
+export default async function getDispensaryData() {
     
 }
