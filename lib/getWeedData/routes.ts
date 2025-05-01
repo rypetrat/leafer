@@ -4,7 +4,7 @@ import { Weedprops } from "@/types";
 
 // for gathering weed data from API
 export default async function getWeedData(): Promise<Weedprops[]> {
-    const url = 'https://the-weed-db.p.rapidapi.com/api/strains?name=widow';
+    const url = 'https://the-weed-db.p.rapidapi.com/api/strains?name=og';
     const API_KEY = process.env.WEED_API_KEY;
     const API_HOST = process.env.WEED_API_HOST;
 

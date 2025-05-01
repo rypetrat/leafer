@@ -9,16 +9,17 @@ import styled from "styled-components";
 
 const StyledOuterDiv = styled.div`
     margin-top: 40px;
-    width: 100%;
-    max-width: 900px;
+    width: 90%;
     margin: 0 auto;
     color: white;
 `;
 
 const StyledInnerDiv = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
 `;
 
 const LoadingMessage = styled.div`
