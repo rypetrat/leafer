@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import { Analytics } from "@vercel/analytics/react"
 
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
@@ -23,6 +24,7 @@ export default function RootLayout({children}: Readonly<{children:React.ReactNod
   return (
     <html lang="en-US" className={geist.className}>
       <head>
+        <Analytics />
         <meta charSet="UTF-8"/>
         <link rel="icon" type="image" href="leaf.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
