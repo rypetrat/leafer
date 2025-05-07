@@ -3,6 +3,7 @@
 import styled from "styled-components";
 import { Weedprops } from "@/types";
 import { useRouter } from "next/navigation";
+import getWeedDataByID from "@/lib/getWeedDataByID/routes";
 
 const Card = styled.div`
     display: flex;
@@ -55,7 +56,9 @@ export default function StrainEntry({ strain }: { strain: Weedprops}) {
 
     const handleClick = async () => {
         // Navigate to the specific strain detail page
-        // const data = await getWeedDataByID(); 
+        const data = await getWeedDataByID(strain._id);
+        // setStrainData(data);
+        // router.push('/strain-details')
     }
 
     
